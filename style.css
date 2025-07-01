@@ -1,9 +1,15 @@
-#official div{
-          width: 250px;
-        height: 215px; 
-        border: 1px;
+.container div{
+     width: 100%; 
+     min-height: 100vh;
+     background-size: cover;
+     background-position: center;
+     padding: 10px 8%;
+     
+}
 
-
-
-
+  #ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
 }
