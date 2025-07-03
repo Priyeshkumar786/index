@@ -24,7 +24,7 @@ justify-content: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(heading\ bg\ images\ 1.jpeg);
+    background-image: url(black\ banner\ 1.jpeg);
     position: fixed;
     top: 0px;
     z-index: 999;
@@ -55,7 +55,7 @@ width: 150px;
 #navbar nav ul li a {
 
 text-decoration: none;
-color: ;
+/* color: ; */
 
 text-transform: uppercase;
 color: black;
@@ -89,8 +89,8 @@ color: black;
 /*==================================First Page===========================*/
 
 
-#first-page{
-background-image: url(heading\ bg.html);
+#First-Page{
+
   background: none;
 
   width: 100%;
@@ -105,7 +105,7 @@ background-image: url(heading\ bg.html);
 }
 
 
-#first-page h1{
+#First-Page h1{
 
      font-size: 110px;
      text-transform: uppercase;
@@ -116,7 +116,7 @@ background-image: url(heading\ bg.html);
 }
 
 
-#first-page img{
+#First-Page img{
     position: absolute;
     top: 60px;
     z-index: 1;
@@ -128,3 +128,5 @@ background-image: url(heading\ bg.html);
   height: 100vh;
   background-color: brown;
 }
+
+
