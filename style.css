@@ -58,7 +58,7 @@ text-decoration: none;
 color: ;
 
 text-transform: uppercase;
-
+color: black;
 }
 
 
@@ -90,7 +90,8 @@ text-transform: uppercase;
 
 
 #first-page{
-
+background-image: url(heading\ bg.html);
+  background: none;
 
   width: 100%;
   height: 90vh;
