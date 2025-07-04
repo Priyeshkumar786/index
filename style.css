@@ -24,7 +24,9 @@ justify-content: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(black\ banner\ 1.jpeg);
+    background-image: url(bg\ main.jpeg);
+    background-position: center;
+    background-size: cover;
     position: fixed;
     top: 0px;
     z-index: 999;
@@ -54,26 +56,53 @@ width: 150px;
 
 #navbar nav ul li a {
 
+
+  display: flex;
+  align-items: center;
+  
 text-decoration: none;
 /* color: ; */
 
 text-transform: uppercase;
 color: black;
+
+}
+
+
+#navbar nav ul li :hover{
+
+  color: white;
+  
+  transform: scale(1.5);
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
 #navbar .call{
+  
 
+  
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
   background-color: rgb(169, 131, 104);
   width: 200px;
   padding: 10px 10px;
   border-radius: 20px;
   color: white;
   font-size: 14px;
+  gap: 10px;
 
 
 }
@@ -81,6 +110,8 @@ color: black;
 #navbar .icon{
 
       display: flex;
+      
+      
       gap: 20px;
 
 }
@@ -94,15 +125,21 @@ color: black;
   background: none;
 
   width: 100%;
-  height: 90vh;
+  height: 107vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(Gemini_Generated_Image_yg0du9yg0du9yg0d.png);
 
-
-
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  
+  
 
 }
+
+
 
 
 #First-Page h1{
@@ -120,13 +157,21 @@ color: black;
     position: absolute;
     top: 60px;
     z-index: 1;
-    background-position: 100vh;
-    
+    /* background-image: url(bg.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+     */
 }
 
 #second-page{
+  width: 100%;
   height: 100vh;
-  background-color: brown;
+  /* background-color: brown; */
+
+
+
+
+
 }
 
 
