@@ -17,6 +17,25 @@ justify-content: left;
 
 
 }
+
+
+#navbar img :hover{
+
+       transform: rotate(45deg);
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
 #navbar{
 
     width: 100%;
@@ -71,17 +90,9 @@ color: black;
 
 #navbar nav ul li :hover{
 
-  color: white;
+  color: black;
   
-  transform: scale(1.5);
-
-
-
-
-
-
-
-
+  transform: scale(1.2);
 
 
 
@@ -107,6 +118,18 @@ color: black;
 
 }
 
+#navbar .call :hover{
+
+           color: aqua;
+           transform: scale(1.08);
+
+
+
+
+
+
+}  
+
 #navbar .icon{
 
       display: flex;
@@ -115,6 +138,14 @@ color: black;
       gap: 20px;
 
 }
+
+#navbar .icon :hover{
+
+    color: black;
+    transform: scale(1.2);
+
+}
+         
 
 
 /*==================================First Page===========================*/
