@@ -7,7 +7,7 @@
 
 
 #navbar img{
-background-color: ;
+/* background-color: ; */
 width: 100;
 height: 60px;
 display: flex;
@@ -226,7 +226,36 @@ transition: all ease 0.4s;
 }
 
 
-}
+.search-container {
+            margin-top: 5vh;
+            width: 70%; /* 30% width */
+            height: 8vh; /* 10% of the viewport height */
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-color: #ffffff; /* Just for visual context of the container */
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden; /* Ensures content stays within bounds */
+        }
+
+        .search-container input[type="text"] {
+            width: calc(100% - 20px); /* Adjust width to account for padding/border */
+            height: calc(100% - 20px); /* Adjust height to account for padding/border */
+            padding: 0 10px;
+            border: none;
+            outline: none;
+            font-size: 1.2em;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        .search-container input[type="text"]::placeholder {
+            color: #aaa;
+        }
+
+
 /*========================================Second page starts here====================================/*
 
 
@@ -234,7 +263,20 @@ transition: all ease 0.4s;
 s
   /* position: ; */
  
- 
+ #Second-Page h1{
+
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  color: chocolate;
+  border: #333;
+ }
+
+
+
+
+
  #Second-Page h1 div{
   width: 100%;
   height: 100vh;
@@ -246,6 +288,19 @@ s
   background-color: #fff;
   /* z-index: -2; */
 }
+
+#searchmenu .Second-Page .search-container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#searchmenu .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
    #Second-Page .button {
     box-sizing: border-box;
@@ -282,78 +337,623 @@ s
   width: 20px;
 }
 
-
+#Second-Page :hover{
+  transform: scale(1.02);
+  transition: 1s;
+}
 
 
    /* ===============================third page starts here===================================== */
-
+  
    .Places{
-          
-           
-          font: size 20px;;
-          margin-bottom: 40px;  
-
+        
 
            height: 100vh;
            width: 100%;
-           color: #fff;
-          display: flex;
-          justify-content: center;
-          text-align: center;
-          align-items: center;
+           display: flex;
+           /* flex-wrap: wrap; */
+           /* gap: 100px; */
+
+
+           /* color: #fff; */
+          /* display: grid; */
+          grid-template-columns: auto auto auto;
+          /* justify-content: space-evenly; */
+          /* gap: 10px; */
+          
+          display: grid;
+          grid-template-columns: 8,300px;
+          overflow: scroll;
+          scrollbar-width: none;
+
         
 
+   }
+
+   .Places :hover{
+    transform: scale(1.04);
+    transition: all ease 2s;
    }
 
    /* .Places-grid{ */
 
 
 
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 40px;
-
-   }
+    
    
 
-  #third-page img{
+  /* #third-page img{
 
 height: 15vh;
     width: 25%;
     display: grid;
     flex-wrap: wrap;
     /* align-items: center; */
-    justify-content: space-evenly;
+    /* justify-content: space-evenly;
 
     overflow: scroll;
-  }
+  } */
 
-.destination-items{
-
- height: 35vh;
+/* .destination-items{ */
+/* 
+  eight: 35vh;
  width: 40%;
- display:grid;
- grid-template-columns: repeat(8,300px);
+ display:grid; */
+ /* grid-template-columns: repeat(8,300px); */
  /* overflow: scroll; */
- gap: 20px;
- flex-wrap: wrap;
+ /* gap: 20px; */
+ /* flex-wrap: wrap; */ 
+ /* } */
 
+  .Places h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:tomato; border:#666;
+  }
+ .Places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Optional: Padding around the grid */
+    justify-content: center; /* Centers grid items horizontally if there's extra space */
+    align-items: start; /* Aligns grid items to the start of the grid area vertically */
+    overflow-x: scroll;
+}
 
+/* Styles for individual destination items (optional, but good practice) */
+.destination-items {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* To align content within each item */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally within the item */
+    height: 100%; /* Ensure all items take full height of their grid cell */
+}
+
+.destination-items img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.destination-items h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.destination-items p {
+    color: #666;
+    line-height: 1.6;
 }
 
 
 
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
 
-    
+/* Main Contact Container */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 30px; /* Space between columns */
+    max-width: 1100px; /* Max width of the overall container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    justify-content: center; /* Center items when they wrap */
+}
+
+/* Contact Info Column */
+.contact-info {
+    flex: 1; /* Allows it to grow and shrink */
+    min-width: 350px; /* Minimum width before wrapping */
+    background-color: #5d2b63; /* Dark purple background */
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.company-icon {
+    font-size: 2.5em;
+    margin-right: 15px;
+    color: #ffd700; /* Gold-like color for the icon */
+}
+
+.contact-info h3 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.contact-info p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start; /* Align icon and text to the top */
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.info-item i {
+    font-size: 1.2em;
+    margin-right: 15px;
+    width: 25px; /* Fixed width for icon to align text nicely */
+    text-align: center;
+    color: #ffd700; /* Gold-like color for info icons */
+}
+
+.info-item span {
+    flex: 1; /* Allow text to take remaining space */
+    line-height: 1.4;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: auto; /* Pushes social icons to the bottom */
+    padding-top: 20px; /* Space above social icons */
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center social icons */
+    margin-left: -40px; /* Adjust if needed to center with the text block */
+    margin-right: -40px;
+    margin-bottom: -10px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    color: #fff;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Specific social icon colors (optional, based on the screenshot) */
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.x-twitter { background-color: #000000; } /* X / Twitter is typically black or dark grey now */
+.social-icon.linkedin { background-color: #0077b5; }
+.social-icon.instagram { background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); } /* Instagram gradient */
+.social-icon.pinterest { background-color: #bd081c; }
+
+
+/* Contact Form Column */
+.contact-form-wrapper {
+    flex: 1; /* Allows it to grow and shrink */
+    min-width: 400px; /* Minimum width before wrapping */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex; /* To center the form inside if needed */
+    flex-direction: column;
+    justify-content: center; /* Vertically center form if wrapper is taller */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* Space between form fields */
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Include padding in element's total width */
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #5d2b63; /* Highlight on focus */
+    outline: none;
+}
+
+.form-textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 120px; /* Minimum height for the message area */
+}
+
+.submit-button {
+    background-color: #5d2b63; /* Dark purple button */
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start; /* Align button to the left */
+}
+
+.submit-button:hover {
+    background-color: #7b3e83; /* Slightly lighter on hover */
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .contact-container {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 15px;
+    }
+
+    .contact-info,
+    .contact-form-wrapper {
+        min-width: unset; /* Remove min-width on small screens */
+        width: 100%; /* Take full width */
+        padding: 25px;
+    }
+
+    .social-icons {
+        margin-left: 0; /* Reset margins */
+        margin-right: 0;
+    }
+
+    .contact-info p {
+        font-size: 0.9em;
+    }
+}
 
 
 
-  /* background-color: brown; */
+.map-section {
+    width: 100%;
+    height: 450px; /* Adjust height as needed */
+    background-color: #e0e0e0; /* Placeholder color */
+    margin-bottom: 0; /* No space between map and footer */
+}
+.map-section iframe {
+    display: block; /* Remove extra space below iframe */
+}
 
 
+/* Main Footer */
+.main-footer {
+    background-color: #3b2046; /* Dark purple/maroon color */
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap */
+    justify-content: space-between; /* Space out columns */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px; /* Space between columns */
+}
+
+.footer-column {
+    flex: 1; /* Allow columns to grow and shrink */
+    min-width: 250px; /* Minimum width for each column before wrapping */
+    padding: 10px 0;
+}
+
+.footer-column h4 {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    font-weight: 600;
+    position: relative; /* For underline effect */
+}
+
+.footer-column h4::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #ffd700; /* Gold underline */
+    margin-top: 10px;
+}
+
+/* About Company Column */
+.about-company .logo-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-company .footer-logo {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+    filter: invert(100%); /* Make logo white if it's dark */
+}
+
+.about-company h4 {
+    margin: 0;
+    font-size: 1.5em; /* Adjust font size for company name */
+}
+
+.about-company p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+/* Important Links Column */
+.important-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.important-links ul li {
+    margin-bottom: 10px;
+}
+
+.important-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.important-links ul li a:hover {
+    opacity: 1;
+    color: #ffd700; /* Gold hover effect */
+}
+
+/* Contact Info Column */
+.contact-info-footer .info-item-footer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.contact-info-footer .info-item-footer i {
+    font-size: 1.1em;
+    margin-right: 15px;
+    width: 25px;
+    text-align: center;
+    color: #ffd700;
+}
+
+.contact-info-footer .info-item-footer span {
+    line-height: 1.4;
+}
+
+/* Follow Us Column (Social Icons) */
+.social-icons-footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    color: #fff;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon-footer:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Specific social icon colors (optional, for closer match) */
+.social-icon-footer.facebook { background-color: #3b5998; }
+.social-icon-footer.x-twitter { background-color: #000000; }
+.social-icon-footer.linkedin { background-color: #0077b5; }
+.social-icon-footer.instagram { background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); }
+.social-icon-footer.pinterest { background-color: #bd081c; }
 
 
+/* Payment Section */
+.payment-section {
+    text-align: center;
+    padding: 20px 0 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Separator line */
+    margin-top: 30px;
+}
+
+.payment-section img {
+    height: 35px; /* Adjust size of payment icons */
+    margin: 0 10px;
+    filter: brightness(0) invert(1); /* Makes icons white if they're dark */
+    opacity: 0.8;
+}
+
+/* Fixed Buttons (Call Us, WhatsApp, Scroll to Top) */
+.call-button, .whatsapp-button, .scroll-to-top-button {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000; /* Ensure they are on top */
+}
+
+.call-button i, .whatsapp-button i, .scroll-to-top-button i {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+.call-button {
+    background-color: #5d2b63; /* Same as your contact info/button */
+    bottom: 20px;
+    left: 20px;
+}
+
+.call-button:hover {
+    background-color: #7b3e83;
+    transform: translateY(-2px);
+}
+
+.whatsapp-button {
+    background-color: #25D366; /* WhatsApp green */
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%; /* Make it circular */
+    width: 45px; /* Fixed width for circular button */
+    height: 45px; /* Fixed height for circular button */
+    justify-content: center; /* Center icon */
+    padding: 0; /* Remove padding */
+}
+
+.whatsapp-button i {
+    margin-right: 0; /* No text, so no margin for icon */
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851;
+    transform: translateY(-2px);
+}
+
+.scroll-to-top-button {
+    background-color: #555; /* Dark grey */
+    bottom: 80px; /* Position above WhatsApp */
+    right: 20px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    padding: 0;
+    display: none; /* Hidden by default, show with JS when scrolled */
+}
+
+.scroll-to-top-button i {
+    margin-right: 0;
+}
+
+.scroll-to-top-button:hover {
+    background-color: #777;
+    transform: translateY(-2px);
+}
 
 
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .footer-column {
+        min-width: calc(50% - 20px); /* Two columns on medium screens */
+    }
+    .footer-content {
+        justify-content: center; /* Center columns when they wrap */
+    }
+}
 
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack columns vertically on small screens */
+        align-items: center;
+        text-align: center;
+        gap: 40px; /* More space when stacked */
+    }
 
+    .footer-column {
+        min-width: unset; /* Remove min-width */
+        width: 100%; /* Take full width */
+    }
+
+    .footer-column h4::after {
+        margin: 10px auto 0; /* Center underline */
+    }
+
+    .about-company .logo-text {
+        justify-content: center; /* Center logo and text */
+    }
+
+    .info-item-footer {
+        justify-content: center; /* Center contact info */
+    }
+
+    .social-icons-footer {
+        justify-content: center; /* Center social icons */
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-section img {
+        height: 30px;
+        margin: 0 5px;
+    }
+    .call-button, .whatsapp-button, .scroll-to-top-button {
+        padding: 8px 12px;
+        font-size: 0.8em;
+    }
+    .call-button i, .whatsapp-button i, .scroll-to-top-button i {
+        font-size: 1em;
+    }
+    .whatsapp-button, .scroll-to-top-button {
+        width: 40px;
+        height: 40px;
+
+    }
+  }
