@@ -228,13 +228,13 @@ transition: all ease 0.4s;
 
 .search-container {
             margin-top: 5vh;
-            width: 70%; /* 30% width */
-            height: 8vh; /* 10% of the viewport height */
+            width: 70%; 
+            height: 8vh; 
             display: flex;
             justify-content: center;
             text-align: center;
             align-items: center;
-            background-color: #ffffff; /* Just for visual context of the container */
+            background-color: #ffffff; 
             border: 1px solid #ccc;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
@@ -462,22 +462,22 @@ height: 15vh;
     font-weight: 600;
 }
 
-/* Main Contact Container */
+
 .contact-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    gap: 30px; /* Space between columns */
-    max-width: 1100px; /* Max width of the overall container */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Padding inside the container */
-    justify-content: center; /* Center items when they wrap */
+    flex-wrap: wrap; 
+    gap: 30px; 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    justify-content: center; 
 }
 
-/* Contact Info Column */
+
 .contact-info {
-    flex: 1; /* Allows it to grow and shrink */
-    min-width: 350px; /* Minimum width before wrapping */
-    background-color: #5d2b63; /* Dark purple background */
+    flex: 1; 
+    min-width: 350px; 
+    background-color: #5d2b63; 
     color: #fff;
     padding: 30px;
     border-radius: 15px;
@@ -495,7 +495,7 @@ height: 15vh;
 .company-icon {
     font-size: 2.5em;
     margin-right: 15px;
-    color: #ffd700; /* Gold-like color for the icon */
+    color: #ffd700; 
 }
 
 .contact-info h3 {
@@ -512,7 +512,7 @@ height: 15vh;
 
 .info-item {
     display: flex;
-    align-items: flex-start; /* Align icon and text to the top */
+    align-items: flex-start; 
     margin-bottom: 15px;
     font-size: 0.9em;
 }
@@ -520,24 +520,24 @@ height: 15vh;
 .info-item i {
     font-size: 1.2em;
     margin-right: 15px;
-    width: 25px; /* Fixed width for icon to align text nicely */
+    width: 25px; 
     text-align: center;
-    color: #ffd700; /* Gold-like color for info icons */
+    color: #ffd700; 
 }
 
 .info-item span {
-    flex: 1; /* Allow text to take remaining space */
+    flex: 1; 
     line-height: 1.4;
 }
 
-/* Social Icons */
+
 .social-icons {
-    margin-top: auto; /* Pushes social icons to the bottom */
-    padding-top: 20px; /* Space above social icons */
+    margin-top: auto; 
+    padding-top: 20px; 
     display: flex;
     gap: 10px;
-    justify-content: center; /* Center social icons */
-    margin-left: -40px; /* Adjust if needed to center with the text block */
+    justify-content: center; 
+    margin-left: -40px;
     margin-right: -40px;
     margin-bottom: -10px;
 }
@@ -549,7 +549,7 @@ height: 15vh;
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
     font-size: 1.2em;
     transition: background-color 0.3s ease;
@@ -559,31 +559,31 @@ height: 15vh;
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Specific social icon colors (optional, based on the screenshot) */
+
 .social-icon.facebook { background-color: #3b5998; }
-.social-icon.x-twitter { background-color: #000000; } /* X / Twitter is typically black or dark grey now */
+.social-icon.x-twitter { background-color: #000000; } 
 .social-icon.linkedin { background-color: #0077b5; }
-.social-icon.instagram { background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); } /* Instagram gradient */
+.social-icon.instagram { background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); } 
 .social-icon.pinterest { background-color: #bd081c; }
 
 
-/* Contact Form Column */
+
 .contact-form-wrapper {
-    flex: 1; /* Allows it to grow and shrink */
-    min-width: 400px; /* Minimum width before wrapping */
+    flex: 1; 
+    min-width: 400px; 
     background-color: #fff;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    display: flex; /* To center the form inside if needed */
+    display: flex; 
     flex-direction: column;
-    justify-content: center; /* Vertically center form if wrapper is taller */
+    justify-content: center; 
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 18px; /* Space between form fields */
+    gap: 18px; 
 }
 
 .form-input,
@@ -596,22 +596,21 @@ height: 15vh;
     font-size: 1em;
     color: #333;
     transition: border-color 0.3s ease;
-    box-sizing: border-box; /* Include padding in element's total width */
+    box-sizing: border-box; 
 }
 
 .form-input:focus,
 .form-textarea:focus {
-    border-color: #5d2b63; /* Highlight on focus */
+    border-color: #5d2b63;
     outline: none;
 }
 
 .form-textarea {
-    resize: vertical; /* Allow vertical resizing only */
-    min-height: 120px; /* Minimum height for the message area */
-}
+    resize: vertical; 
+    min-height: 120px; }
 
 .submit-button {
-    background-color: #5d2b63; /* Dark purple button */
+    background-color: #5d2b63; 
     color: #fff;
     padding: 15px 25px;
     border: none;
@@ -620,15 +619,15 @@ height: 15vh;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    align-self: flex-start; /* Align button to the left */
-}
+    align-self: flex-start;}
 
-.submit-button:hover {
-    background-color: #7b3e83; /* Slightly lighter on hover */
+
+ .submit-button:hover {
+    background-color: #7b3e83; 
     transform: translateY(-2px);
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .section-title {
         font-size: 2em;
@@ -636,19 +635,19 @@ height: 15vh;
     }
 
     .contact-container {
-        flex-direction: column; /* Stack columns vertically */
+        flex-direction: column;
         padding: 15px;
     }
 
     .contact-info,
     .contact-form-wrapper {
-        min-width: unset; /* Remove min-width on small screens */
-        width: 100%; /* Take full width */
+        min-width: unset; 
+        width: 100%; 
         padding: 25px;
     }
 
     .social-icons {
-        margin-left: 0; /* Reset margins */
+        margin-left: 0; 
         margin-right: 0;
     }
 
@@ -661,299 +660,228 @@ height: 15vh;
 
 .map-section {
     width: 100%;
-    height: 450px; /* Adjust height as needed */
-    background-color: #e0e0e0; /* Placeholder color */
-    margin-bottom: 0; /* No space between map and footer */
-}
+    height: 450px; 
+    background-color: #e0e0e0; 
+    margin-bottom: 0;}
+
 .map-section iframe {
-    display: block; /* Remove extra space below iframe */
+    display: block; 
 }
 
 
-/* Main Footer */
-.main-footer {
-    background-color: #3b2046; /* Dark purple/maroon color */
+.footer {
+    background-color: #3f2a56; /* Dark background for the footer */
     color: #fff;
-    padding: 40px 20px;
+    padding: 40px 0;
+    font-size: 0.9em;
 }
 
-.footer-content {
+.footer .container {
     display: flex;
-    flex-wrap: wrap; /* Allow columns to wrap */
-    justify-content: space-between; /* Space out columns */
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 30px; /* Space between columns */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .footer-column {
-    flex: 1; /* Allow columns to grow and shrink */
-    min-width: 250px; /* Minimum width for each column before wrapping */
-    padding: 10px 0;
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    padding-right: 20px;
 }
 
-.footer-column h4 {
-    font-size: 1.2em;
-    margin-bottom: 25px;
-    font-weight: 600;
-    position: relative; /* For underline effect */
-}
-
-.footer-column h4::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: #ffd700; /* Gold underline */
-    margin-top: 10px;
-}
-
-/* About Company Column */
-.about-company .logo-text {
+/* About Us Column */
+.footer-column.about-us .footer-logo {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.about-company .footer-logo {
-    width: 50px; /* Adjust logo size */
-    height: auto;
+.footer-column.about-us .footer-logo img {
+    height: 40px; /* Adjust logo size */
     margin-right: 10px;
-    filter: invert(100%); /* Make logo white if it's dark */
 }
 
-.about-company h4 {
-    margin: 0;
-    font-size: 1.5em; /* Adjust font size for company name */
+.footer-column.about-us .footer-logo .logo-text {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
 }
 
-.about-company p {
-    font-size: 0.9em;
+.footer-column.about-us .footer-logo .logo-tagline {
+    display: block;
+    font-size: 0.7em;
+    color: #aaa;
+    margin-top: 2px;
+}
+
+.footer-column.about-us p {
     line-height: 1.6;
-    opacity: 0.8;
+    color: #ccc;
 }
 
-/* Important Links Column */
-.important-links ul {
+/* General Column Headings */
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
+
+/* List Styles (Important Links) */
+.footer-column ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.important-links ul li {
+.footer-column ul li {
     margin-bottom: 10px;
 }
 
-.important-links ul li a {
-    color: #fff;
+.footer-column ul li a {
+    color: #ccc;
     text-decoration: none;
-    font-size: 0.9em;
-    opacity: 0.8;
-    transition: opacity 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.important-links ul li a:hover {
-    opacity: 1;
-    color: #ffd700; /* Gold hover effect */
+.footer-column ul li a:hover {
+    color: #007bff; /* Example hover color */
 }
 
-/* Contact Info Column */
-.contact-info-footer .info-item-footer {
+/* Contact Information Column */
+.footer-column.contact-information p {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 15px;
-    font-size: 0.9em;
-    opacity: 0.8;
+    margin-bottom: 10px;
+    color: #ccc;
 }
 
-.contact-info-footer .info-item-footer i {
+.footer-column.contact-information p i {
+    margin-right: 10px;
+    color: #007bff; /* Icon color */
     font-size: 1.1em;
-    margin-right: 15px;
-    width: 25px;
-    text-align: center;
-    color: #ffd700;
+    margin-top: 2px;
 }
 
-.contact-info-footer .info-item-footer span {
-    line-height: 1.4;
-}
-
-/* Follow Us Column (Social Icons) */
-.social-icons-footer {
+/* Follow Us Column */
+.footer-column .social-icons {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
 }
 
-.social-icon-footer {
-    display: flex;
+.footer-column .social-icons .social-icon {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    background-color: #3f2a56;
     color: #fff;
-    font-size: 1.1em;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2em;
     transition: background-color 0.3s ease;
 }
 
-.social-icon-footer:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+.footer-column .social-icons .social-icon:hover {
+    background-color: #007bff; /* Example hover color */
 }
 
-/* Specific social icon colors (optional, for closer match) */
-.social-icon-footer.facebook { background-color: #3b5998; }
-.social-icon-footer.x-twitter { background-color: #000000; }
-.social-icon-footer.linkedin { background-color: #0077b5; }
-.social-icon-footer.instagram { background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); }
-.social-icon-footer.pinterest { background-color: #bd081c; }
-
-
-/* Payment Section */
-.payment-section {
+/* Payment Methods */
+.payment-methods {
     text-align: center;
-    padding: 20px 0 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Separator line */
     margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
 }
 
-.payment-section img {
-    height: 35px; /* Adjust size of payment icons */
+.payment-methods img {
+    height: 30px; /* Adjust payment icon size */
     margin: 0 10px;
-    filter: brightness(0) invert(1); /* Makes icons white if they're dark */
-    opacity: 0.8;
 }
 
-/* Fixed Buttons (Call Us, WhatsApp, Scroll to Top) */
-.call-button, .whatsapp-button, .scroll-to-top-button {
+/* Floating Buttons */
+.floating-buttons {
     position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.floating-buttons .call-us-btn,
+.floating-buttons .whatsapp-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 10px 15px;
     border-radius: 5px;
     color: #fff;
     text-decoration: none;
-    font-size: 0.9em;
-    font-weight: 600;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    z-index: 1000; /* Ensure they are on top */
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
-.call-button i, .whatsapp-button i, .scroll-to-top-button i {
+.floating-buttons .call-us-btn {
+    background-color: #007bff; /* Blue for call */
+}
+
+.floating-buttons .call-us-btn:hover {
+    background-color: #0056b3;
+}
+
+.floating-buttons .call-us-btn i {
     margin-right: 8px;
-    font-size: 1.1em;
 }
 
-.call-button {
-    background-color: #5d2b63; /* Same as your contact info/button */
-    bottom: 20px;
-    left: 20px;
-}
-
-.call-button:hover {
-    background-color: #7b3e83;
-    transform: translateY(-2px);
-}
-
-.whatsapp-button {
+.floating-buttons .whatsapp-btn {
     background-color: #25D366; /* WhatsApp green */
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%; /* Make it circular */
-    width: 45px; /* Fixed width for circular button */
-    height: 45px; /* Fixed height for circular button */
-    justify-content: center; /* Center icon */
-    padding: 0; /* Remove padding */
-}
-
-.whatsapp-button i {
-    margin-right: 0; /* No text, so no margin for icon */
-}
-
-.whatsapp-button:hover {
-    background-color: #1DA851;
-    transform: translateY(-2px);
-}
-
-.scroll-to-top-button {
-    background-color: #555; /* Dark grey */
-    bottom: 80px; /* Position above WhatsApp */
-    right: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    justify-content: center;
-    padding: 0;
-    display: none; /* Hidden by default, show with JS when scrolled */
+    font-size: 1.5em;
+    padding: 0; /* Remove padding for circle */
 }
 
-.scroll-to-top-button i {
-    margin-right: 0;
+.floating-buttons .whatsapp-btn:hover {
+    background-color: #1DA851;
 }
-
-.scroll-to-top-button:hover {
-    background-color: #777;
-    transform: translateY(-2px);
-}
-
 
 /* Responsive Adjustments */
-@media (max-width: 992px) {
-    .footer-column {
-        min-width: calc(50% - 20px); /* Two columns on medium screens */
-    }
-    .footer-content {
-        justify-content: center; /* Center columns when they wrap */
-    }
-}
-
 @media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column; /* Stack columns vertically on small screens */
+    .footer .container {
+        flex-direction: column;
         align-items: center;
-        text-align: center;
-        gap: 40px; /* More space when stacked */
     }
 
     .footer-column {
-        min-width: unset; /* Remove min-width */
-        width: 100%; /* Take full width */
+        min-width: unset;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
     }
 
-    .footer-column h4::after {
-        margin: 10px auto 0; /* Center underline */
+    .footer-column h3 {
+        text-align: center;
     }
 
-    .about-company .logo-text {
-        justify-content: center; /* Center logo and text */
+    .footer-column.about-us .footer-logo {
+        justify-content: center;
     }
 
-    .info-item-footer {
-        justify-content: center; /* Center contact info */
+    .footer-column.contact-information p {
+        justify-content: center;
     }
 
-    .social-icons-footer {
-        justify-content: center; /* Center social icons */
+    .footer-column .social-icons {
+        justify-content: center;
     }
 }
-
-@media (max-width: 480px) {
-    .payment-section img {
-        height: 30px;
-        margin: 0 5px;
-    }
-    .call-button, .whatsapp-button, .scroll-to-top-button {
-        padding: 8px 12px;
-        font-size: 0.8em;
-    }
-    .call-button i, .whatsapp-button i, .scroll-to-top-button i {
-        font-size: 1em;
-    }
-    .whatsapp-button, .scroll-to-top-button {
-        width: 40px;
-        height: 40px;
-
-    }
-  }
+:root {
+    --footer-bg-color: #3f2a56; /* Deep Purple background */
+}
