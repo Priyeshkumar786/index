@@ -33,7 +33,7 @@ justify-content: left;
 
 }
 
-@media(max-width:430px){
+/* @media(max-width:430px){
 
     #navbar{
         background-color: coral;
@@ -43,7 +43,7 @@ justify-content: left;
         width: 70%;
         top: 150px;
     }
-}
+} */
 
 
 #navbar{
@@ -866,7 +866,7 @@ height: 15vh;
 }
 
 /* Responsive Adjustments */
-@media 
+@media {
     .footer .container {
         flex-direction: column;
         align-items: center;
@@ -896,7 +896,8 @@ height: 15vh;
     }
 
 :root {
-    --footer-bg-color: #3f2a56; /* Deep Purple background */
+    --footer-bg-color: #3f2a56; 
+}
 }
 
 
@@ -917,4 +918,152 @@ height: 15vh;
         display: block;
 
     }
+
+
+@media (max-width: 430px) {
+    #navbar {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    #navbar img {
+        height: 40px; 
+        margin-right: 0; 
+    }
+
+    #navbar label.fa-bars {
+        display: block; 
+        order: 1; 
+    }
+
+    #navbar img {
+        order: 2; 
+        margin-left: 15px; 
+    }
+
+    
+    #navbar nav {
+        display: none;
+        flex-basis: 100%; 
+        order: 5; 
+        margin-top: 10px; 
+    }
+
+    #navbar nav ul {
+        flex-direction: column; 
+        align-items: center; 
+        background-color: #fff;
+        padding: 10px 0;
+        border-top: 1px solid #eee;
+    }
+
+    #navbar nav ul li {
+        margin: 10px 0; 
+        width: 100%; 
+        text-align: center;
+    }
+
+    #navbar nav ul li a {
+        display: block; 
+        padding: 10px 0;
+    }
+
+    
+    #navbar input[type="checkbox"]:checked ~ nav {
+        display: flex; 
+    }
+
+    
+    #navbar .icon {
+        order: 3; 
+        margin-left: auto; 
+        gap: 10px; 
+        font-size: 1rem;
+    }
+
+    #navbar .login {
+        order: 4; 
+        margin-left: 15px; 
+        font-size: 0.85rem;
+    }
+
+    #navbar .login i {
+        font-size: 1rem;
+    }
+
+    #navbar .call {
+        order: 6; 
+        flex-basis: 100%; 
+        justify-content: center; 
+        margin: 15px 0 0 0; 
+        font-size: 0.8rem;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    #first-page {
+        padding: 10px;
+    }
+
+    #first-page marquee {
+        font-size: 1.2rem; 
+    }
+     .Places h2{
+        text-decoration: dashed;
+        text-size-adjust: 8px;
+        color: #000000;
 }
+}
+
+
+@media (max-width: 480px) {
+    #navbar {
+        padding: 10px;
+    }
+
+    #navbar img {
+        height: 35px; 
+        margin-left: 10px;
+    }
+
+    #navbar label.fa-bars {
+        font-size: 1.5rem;
+    }
+
+    #navbar .icon {
+        gap: 8px;
+        font-size: 0.9rem;
+    }
+
+    #navbar .login {
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+
+    #navbar .call {
+        font-size: 0.75rem;
+        padding-top: 10px;
+    }
+
+    #first-page marquee {
+        font-size: 1rem; 
+    }
+
+
+#check:checked~navbar{
+    display: block;
+}
+ .Second-Page .button {
+    margin-left: 500px;
+    display: none
+    
+}
+#Places  .destination-items {
+     width: 55%;
+}
+
+
+
+}}
