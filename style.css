@@ -865,7 +865,7 @@ height: 15vh;
     background-color: #1DA851;
 }
 
-/* Responsive Adjustments */
+
 @media {
     .footer .container {
         flex-direction: column;
